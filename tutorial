@@ -1,0 +1,49 @@
+# Regex Tutorial: Email search peramiters
+
+## Introduction
+
+Welcome to this tutorial on doing a search for an email address and finding it by multiple values to assist in a fast and reliable search.
+
+## Summary
+
+The regex featured in this tutorial is ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$. when you put all these together, this regular expression matches strings that follow the typical pattern of an email address it ensures there is at least one character before and after the @ symbol.
+
+## Table of Contents
+
+- [Component 1: ^#?](#component-1)
+- [Component 2: [a-f0-9]{6}|[a-f0-9]{3}](#component-2)
+- [Component 3: $](#component-3)
+- [About the Author](#about-the-author)
+
+## Component 1: ^#?
+
+The `^` denots the start of the string
+
+
+
+## Component 2:  [a-f0-9]{6}|[a-f0-9]{3}
+
+the @ symbol matches the search to the @ symbol
+
+
+
+
+## Component 3: $
+
+`[a-zA-Z0-9._%+-]+` matches one or more coccurences of any alphanumeric character, dot, underscore, percentage sign, plus sign, or hyphen
+
+## Component 4: $
+
+`\.` matches a dot
+
+## Component 5: $
+`[a-zA-Z]{2,}` matches two or more occurrences of any alphabetic character. this represents the top-level domain
+## Component 6: $
+`[a-zA-Z0-9.-]+`: Matches one or more occurrences of any alphanumeric character, dot, or hyphen. This represents the domain name.
+## Component 7: $
+`$`: Asserts the end of the string.
+
+
+This tutorial was written by Benjamin Pippenger. Feel free to check out my other projects on GitHub!
+
+`[albertbranom](https://github.com/Bybymaxy)`
